@@ -1,0 +1,74 @@
+body {
+  font-family: sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Style for the container */
+.noplatensigns {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Style each row to be grid-like with 4 equal columns */
+.row {
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  gap: 10px;
+}
+
+/* Common button styles */
+.no{
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  background-color: #b0b8ce;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign{
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  background-color: #505a74;
+  color:white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.enter , .input {
+  margin-top: 10px;
+  width: calc(4 * 60px + 3 * 10px); /* 4 columns + 3 gaps */
+  height: 60px;
+  background-color:#505a74;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.no:hover , .sign:hover , .enter:hover{
+    background-color: #354c7c	;
+    transform: scale(1.05); /* Slight zoom effect */
+    transition: all 0.2s ease;
+}
+
